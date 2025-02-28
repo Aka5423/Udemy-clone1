@@ -83,8 +83,13 @@ body{
     background-color: #C178F6;
     color:white;
     border-radius: 30px;
-    
-    padding:10px;
+     padding:10px;
+     border:solid black 1px ;
+}
+.container h3:hover{
+    background-color: transparent;
+    color:black;
+    transition: 1s;
 }
 
 .sale-image
@@ -100,7 +105,23 @@ body{
     top:20%;
     left:10% ;
     background-color: white;
-    
+    animation-name: colorchange;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    opacity: 0;
+     animation-fill-mode:forwards;  
+     
+     
+}
+@keyframes colorchange {
+    0%{
+        transform:scale(0);
+        opacity:0;
+    }
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
 }
 .Recommandation{
     padding:10px;
